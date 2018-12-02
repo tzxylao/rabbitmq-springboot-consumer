@@ -16,6 +16,7 @@ public class RabbitReceiver {
 	
 	@RabbitListener(bindings = @QueueBinding(
 			value = @Queue(
+					value = "queue-2",
 			durable="true"),
 			exchange = @Exchange(value = "exchange-5",
 			durable="true", 
